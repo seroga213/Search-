@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Advanced Google Search</title>
+    <style>
+      /* CSS стили */
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input[type="text"],
+      select {
+        margin: 5px 0;
+        padding: 5px;
+        width: 300px;
+      }
+      input[type="submit"] {
+        background-color: #4285f4;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px 0;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      input[type="submit"]:hover {
+        background-color: #0d8bf2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-right">
+      <a href="index.html" >Return to Google Search</a>
+      <a href="image-search.html">Image Search</a>
+    </div>
+    
+    <form action="https://www.google.com/search" method="get" target="_blank">
+      <label for="search">Поиск:</label>
+      <input type="text" id="search" name="q" placeholder="Введите поисковой запрос">
+    
+      <br>
+    
+      <label for="exact-phrase">Точная фраза:</label>
+      <input type="text" id="exact-phrase" name="as_epq">
+    
+      <br>
+    
+      <label for="any-words">Любые из слов:</label>
+      <input type="text" id="any-words" name="as_oq">
+    
+      <br>
+    
+      <label for="none-words">Исключить слова:</label>
+      <input type="text" id="none-words" name="as_eq">
+    
+      <br>
+    
+      <label for="language">Язык:</label>
+      <select id="language" name="lr">
+        <option value="lang_en">Английский</option>
+        <option value="lang_ru">Русский</option>
+        <option value="lang_fr">Французский</option>
+        <option value="lang_es">Испанский</option>
+        <option value="lang_de">Немецкий</option>
+      </select>
+    
+      <br>
+    
+      <label for="file-type">Тип файла:</label>
+      <select id="file-type" name="as_filetype">
+        <option value="pdf">PDF</option>
+        <option value="doc">DOC</option>
+        <option value="xls">XLS</option>
+        <option value="ppt">PPT</option>
+        <option value="txt">TXT</option>
+      </select>
+    
+      <br>
+    
+      <input type="submit" value="Найти">
+    </form>

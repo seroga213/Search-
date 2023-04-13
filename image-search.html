@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <style>
+      /* CSS для центрирования строки поиска и кнопки */
+      form {
+        text-align: center;
+      }
+      input[type="text"] {
+        border-radius: 10px;
+        padding: 5px;
+        width: 300px;
+      }
+      input[type="submit"] {
+        background-color: #4285f4;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 20px;
+        margin-top: 10px;
+      }
+      /* CSS для размещения ссылок в правом верхнем углу */
+      .top-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+      }
+      .top-right a {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-right">
+      <a href="index.html" >Return to Google Search</a>
+      <a href="advanced-search.html">Advanced Search</a>
+    </div>
+    <form action="https://www.google.com/search" method="GET">
+      <input type="hidden" name="tbm" value="isch">
+      <input type="text" name="q">
+      <input type="submit" value="Search Images">
+  </body>
+</html>
